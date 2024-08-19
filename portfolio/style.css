@@ -1,0 +1,295 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image:header;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+#skills {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.skill-item h3 {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #333;
+    border-radius: 25px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.project-item img {
+    width: 150px; /* Set width */
+    height: 150px; /* Set height equal to width */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px;
+    object-fit: cover; /* Ensure the image covers the circle area without distortion */
+    border: 2px solid #ddd; /* Optional: Add a border for better visibility */
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: #555;
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.timeline li {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .skill-item {
+        width: 22%;
+    }
+}
+
+@media (max-width: 767px) {
+    .skill-item {
+        width: 100%;
+    }
+}
+
+.social-media {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-media h2 {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    transition: opacity 0.3s ease;
+}
+
+.social-media a:hover img {
+    opacity: 0.7;
+}
+/* Style for the contact section */
+#contact {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Style for the container */
+#contact .container {
+    text-align: center;
+}
+
+/* Style for the section heading */
+#contact h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Style for the form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for form labels */
+#contactForm label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+/* Style for form inputs and textarea */
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Style for textarea */
+#contactForm textarea {
+    resize: vertical;
+}
+
+/* Style for the submit button */
+#contactForm button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #0056b3;
+}
+.bio, .details, .skill-list, .project-list {
+    text-align: center;
+}
+
+.details table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.details th, .details td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.details th {
+    background-color: #f4f4f4;
+}
